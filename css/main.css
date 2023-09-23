@@ -3,8 +3,11 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  background-color: #000;
   font-family: "Be Vietnam Pro", sans-serif;
+}
+
+body {
+  background-color: #000;
 }
 
 .container {
@@ -78,7 +81,7 @@ a {
   transition: all 0.3s ease-in-out;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 900px) {
   .hamburger {
     display: block;
   }
@@ -98,12 +101,16 @@ a {
     gap: 0;
     flex-direction: column;
     background-color: #000;
+    z-index: 1;
     width: 100%;
     text-align: center;
     transition: 0.3s;
   }
   .nav__menu-item {
     margin: 16px 0px;
+  }
+  .nav__menu .nav-button {
+    margin-left: 0px;
   }
   .nav__menu.active {
     left: 0;
@@ -116,6 +123,7 @@ a {
   position: absolute;
   top: 0;
   right: 0;
+  z-index: -1;
 }
 
 .hero__title {
@@ -234,7 +242,6 @@ a {
   margin-top: 48px;
   margin-left: 48px;
   color: #fff;
-  background-color: transparent;
   font-size: 40px;
   font-style: normal;
   font-weight: 600;
@@ -242,14 +249,10 @@ a {
   letter-spacing: 0.24px;
 }
 .rent__card-btn {
-  background-color: transparent;
   display: flex;
   align-items: center;
   margin-top: 344px;
   margin-left: 389px;
-}
-.rent__card-btn p, .rent__card-btn a, .rent__card-btn svg {
-  background-color: transparent;
 }
 .rent__card-btn a {
   color: #fff;
@@ -295,13 +298,12 @@ a {
   grid-column-gap: 32px;
 }
 .services__cards-card {
-  width: 384px;
+  max-width: 384px;
   height: 516px;
 }
 .services__cards-card h2 {
   margin-top: 24px;
   margin-bottom: 16px;
-  background-color: transparent;
   color: #fff;
   font-size: 24px;
   font-style: normal;
@@ -309,13 +311,170 @@ a {
   line-height: 32px; /* 133.333% */
   letter-spacing: 0.144px;
 }
+.services__cards-card h2 a {
+  transition: 0.7s all ease;
+}
+.services__cards-card h2 a:hover {
+  color: #EE8313;
+  letter-spacing: 1px;
+}
 .services__cards-card p {
   color: #fff;
-  background-color: transparent;
   opacity: 0.8;
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
   line-height: 28px; /* 175% */
   letter-spacing: 0.096px;
+}
+
+@media (max-width: 1200px) {
+  .container {
+    padding: 0px 15px;
+  }
+  .section__hero img {
+    max-width: 900px;
+  }
+  .services__cards {
+    grid-template-columns: repeat(2, 1fr);
+    place-items: center;
+  }
+  .services__cards-card:nth-child(3) {
+    margin-top: 32px;
+  }
+}
+@media (max-width: 1100px) {
+  .section__hero img {
+    max-width: 800px;
+  }
+  .rent__cards {
+    grid-template-columns: repeat(1, 1fr);
+    place-items: center;
+  }
+}
+@media (max-width: 970px) {
+  .section__hero img {
+    position: static;
+  }
+  .section__hero .container {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  .hero__title {
+    margin-top: 50px;
+  }
+  .hero__stats {
+    margin-bottom: 0px;
+  }
+}
+@media (max-width: 826px) {
+  .services__title {
+    margin: 0 auto;
+    text-align: center;
+  }
+  .rent__cards {
+    grid-template-columns: repeat(1, 1fr);
+    place-items: center;
+    margin-bottom: 50px;
+  }
+  .services__cards {
+    grid-template-columns: repeat(1, 1fr);
+    place-items: center;
+  }
+  .services__cards-card {
+    margin-top: 32px;
+  }
+}
+@media (max-width: 616px) {
+  .rent__card {
+    max-width: 500px;
+  }
+  .rent__card-btn {
+    margin-left: 333px;
+  }
+}
+@media (max-width: 528px) {
+  .rent__card {
+    max-width: 400px;
+  }
+  .rent__card-btn {
+    margin-left: 250px;
+  }
+}
+@media (max-width: 428px) {
+  .rent__card {
+    max-width: 350px;
+  }
+  .rent__card-btn {
+    margin-left: 200px;
+  }
+  .services__cards-card, .services__cards-card img {
+    max-width: 320px;
+    height: auto;
+  }
+}
+@media (max-width: 390px) {
+  .hero__buttons {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 10px;
+  }
+  .hero__title h1 {
+    font-size: 37px;
+  }
+}
+@media (max-width: 380px) {
+  .rent__card {
+    max-width: 300px;
+  }
+  .rent__card-btn {
+    margin-left: 160px;
+  }
+  .rent__title h2 {
+    font-size: 30px;
+  }
+  .services__title h2 {
+    font-size: 30px;
+  }
+}
+@media (max-width: 350px) {
+  .services__cards-card, .services__cards-card img {
+    max-width: 290px;
+  }
+  .hero__stats {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    margin-top: 20px;
+  }
+  .hero__subtitle {
+    margin-top: 10px;
+    margin-bottom: 20px;
+  }
+}
+@media (max-width: 330px) {
+  .services__cards-card, .services__cards-card img {
+    max-width: 260px;
+  }
+  .rent__card {
+    max-width: 260px;
+    height: 400px;
+  }
+  .rent__card h2 {
+    text-align: center;
+    margin-left: 0px;
+  }
+  .rent__card-btn {
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    margin-top: 220px;
+  }
+}
+@media (max-width: 290px) {
+  .rent__card, .services__cards-card, .services__cards-card img {
+    max-width: 230px;
+  }
 }/*# sourceMappingURL=main.css.map */
