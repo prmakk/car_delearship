@@ -12,6 +12,7 @@ $secondaryColor: #EE8313;
 
 body{
     background-color: #000;
+    overflow-x: hidden;
 }
 
 .container{
@@ -128,7 +129,7 @@ a{
         }
 
         &.active{
-            left: 0;
+            left: -26%;
         }
     }
     
@@ -144,6 +145,14 @@ a{
         top: 0;
         right: 0;
         z-index: -1;
+        opacity: 0;
+        transition: 0.7s all ease;
+        transform: translate(0, -50%);
+
+        &._active{
+            transform: translate(0, 0);
+            opacity: 1;
+        }
     }
 }
 .hero{
@@ -152,6 +161,14 @@ a{
         max-width: 591px;
         color: $mainColor;
         margin-top: 167px;
+        opacity: 0;
+        transform: translate(-120%, 0);
+        transition: .7s all ease;
+
+        &._active{
+            transform: translate(0, 0);
+            opacity: 1;
+        }
     
         h1{
             font-size: 52px;
@@ -168,6 +185,14 @@ a{
         max-width: 474px;
         opacity: 0.8;
         color: $mainColor;
+        opacity: 0;
+        transform: translate(-120%, 0);
+        transition: .7s all ease;
+
+        &._active{
+            transform: translate(0, 0);
+            opacity: 1;
+        }
 
         h2{
             font-size: 17px;
@@ -181,6 +206,15 @@ a{
     &__buttons{
         display: flex;
         gap: 35px;
+
+        opacity: 0;
+        transform: translate(-120%, 0);
+        transition: .7s all ease;
+
+        &._active{
+            transform: translate(0, 0);
+            opacity: 1;
+        }
     }
 
     &__buy-btn{
@@ -221,6 +255,15 @@ a{
         margin-top: 40px;
         margin-bottom: 187px;
         gap: 40px;
+
+        opacity: 0;
+        transform: translate(-120%, 0);
+        transition: .7s all ease;
+
+        &._active{
+            transform: translate(0, 0);
+            opacity: 1;
+        }
     }
 
     &__stat{
@@ -254,6 +297,15 @@ a{
         max-width: 591px;
         margin-bottom: 40px;
 
+        opacity: 0;
+        transform: translate(0, 120%);
+        transition: .7s all ease;
+
+        &._active{
+            transform: translate(0, 0);
+            opacity: 1;
+        }
+
         h2{
             text-align: center;
             font-size: 52px;
@@ -277,6 +329,15 @@ a{
     &__card{
         width: 584px;
         height: 524px;
+
+        opacity: 0;
+        transform: translate(0, 20%);
+        transition: .7s all ease;
+
+        &._active{
+            transform: translate(0, 0);
+            opacity: 1;
+        }
 
         h2{
             margin-top: 48px;
@@ -333,6 +394,15 @@ a{
         max-width: 591px;
         margin-bottom: 66px;
 
+        opacity: 0;
+        transform: translate(-120%, 0);
+        transition: .7s all ease;
+
+        &._active{
+            transform: translate(0, 0);
+            opacity: 1;
+        }
+
         h2{
             color: $mainColor;
             font-size: 52px;
@@ -348,6 +418,15 @@ a{
         display: grid;
         grid-template-columns: repeat(3, 1fr);
         grid-column-gap: 32px;
+
+        opacity: 0;
+        transform: translate(120%, 0);
+        transition: .7s all ease;
+
+        &._active{
+            transform: translate(0, 0);
+            opacity: 1;
+        }
 
         &-card{
             max-width: 384px;
@@ -393,6 +472,15 @@ a{
         text-align: center;
         margin: 0 auto;
         margin-bottom: 40px;
+
+        opacity: 0;
+        transform: translate(120%, 0);
+        transition: .7s all ease;
+
+        &._active{
+            transform: translate(0, 0);
+            opacity: 1;
+        }
         
         h2{
             color: $mainColor;
@@ -410,6 +498,15 @@ a{
         grid-template-rows: repeat(2, 1fr);
         grid-column-gap: 24px;
         grid-row-gap: 24px;
+
+        opacity: 0;
+        transform: translate(-120%, 0);
+        transition: .7s all ease;
+
+        &._active{
+            transform: translate(0, 0);
+            opacity: 1;
+        }
 
         &-card{
             max-width: 384px;
@@ -468,6 +565,13 @@ a{
         margin-top: 162px;
         text-align: center;
 
+        opacity: 0;
+        transition: .7s all ease;
+
+        &._active{
+            opacity: 1;
+        }
+
         h2{
             color: $mainColor;
             font-size: 52px;
@@ -481,6 +585,15 @@ a{
     .responsive_map{
         max-width: 100%;
     }
+
+    &__map{
+        opacity: 0;
+        transition: .7s all ease;
+
+        &._active{
+            opacity: 1;
+        }
+    }
 }
 
 .footer{
@@ -490,6 +603,15 @@ a{
     &__main{
         display: flex;
         justify-content: space-between;
+
+        opacity: 0;
+        transform: translate(0, 20%);
+        transition: .7s all ease;
+
+        &._active{
+            transform: translate(0, 0);
+            opacity: 1;
+        }
 
         &-info{
             padding-top: 52px;

@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/main.css">
+    <link rel="shortcut icon" type="image/png" href="images/icon.png">
     <title>Car Dealership</title>
 </head>
 <body>
@@ -17,13 +18,13 @@
                         <a href="#" class="nav__menu-link">Home</a>
                     </li>
                     <li class="nav__menu-item">
-                        <a href="#" class="nav__menu-link">Cars</a>
+                        <a href="#cars" class="nav__menu-link">Cars</a>
                     </li>
                     <li class="nav__menu-item">
-                        <a href="#" class="nav__menu-link">Book now</a>
+                        <a href="#rent" class="nav__menu-link">Book now</a>
                     </li>
                     <li class="nav__menu-item">
-                        <a href="#" class="nav__menu-link">Terms and conditions</a>
+                        <a href="#footer" class="nav__menu-link">Terms and conditions</a>
                     </li>
                     <li class="nav__menu-item">
                         <a href="#" class="nav-button">Manage Booking</a>
@@ -41,23 +42,23 @@
 
     <section class="section__hero">
         <div class="container">
-            <img src="images/hero_img.png" alt="Hero Car Image">
+            <img src="images/hero_img.png" alt="Hero Car Image" class="_anim-items _anim-done">
             <div class="hero">
-                <div class="hero__title">
+                <div class="hero__title _anim-items _anim-done">
                     <h1>The World's Best Luxury Car Deals</h1>
                 </div>
 
-                <div class="hero__subtitle">
+                <div class="hero__subtitle _anim-items _anim-done">
                     <h2>HKinvestor can provide rentals of the most exclusive cars like Ferrari and Lamborghini.</h2>
                 </div>
 
-                <div class="hero__buttons">
+                <div class="hero__buttons _anim-items _anim-done">
                     <a href="#" class="hero__buy-btn">Buy Now</a>
                     <a href="#" class="hero__video-btn">Video Introduction</a>
                 </div>
                 
 
-                <div class="hero__stats">
+                <div class="hero__stats _anim-items _anim-done">
                     <div class="hero__stat">
                         <h3>500+</h3>
                         <p>Luxury Cars</p>
@@ -73,13 +74,13 @@
     </section>
 
     <section class="section__rent">
-        <div class="rent">
+        <div class="rent" id="cars">
             <div class="container">
-                <div class="rent__title">
+                <div class="rent__title _anim-items _anim-done">
                     <h2>Rent a Luxury Car</h2>
                 </div>
                 <div class="rent__cards">
-                    <div class="rent__card">
+                    <div class="rent__card _anim-items _anim-done">
                         <h2>Supercars</h2>
                         <div class="rent__card-btn">
                             <p><a href="">Discover</a></p>
@@ -88,7 +89,7 @@
                             </svg>
                         </div>
                     </div>
-                    <div class="rent__card">
+                    <div class="rent__card _anim-items _anim-done">
                         <h2>Sportcars</h2>
                         <div class="rent__card-btn">
                             <p><a href="">Discover</a></p>
@@ -97,7 +98,7 @@
                             </svg>
                         </div>
                     </div>
-                    <div class="rent__card">
+                    <div class="rent__card _anim-items _anim-done">
                         <h2>SUV</h2>
                         <div class="rent__card-btn">
                             <p><a href="">Discover</a></p>
@@ -106,7 +107,7 @@
                             </svg>
                         </div>
                     </div>
-                    <div class="rent__card">
+                    <div class="rent__card _anim-items _anim-done">
                         <h2>Supersuv</h2>
                         <div class="rent__card-btn">
                             <p><a href="">Discover</a></p>
@@ -123,10 +124,10 @@
     <section class="section__services">
         <div class="container">
             <div class="services">
-                <div class="services__title">
+                <div class="services__title _anim-items _anim-done">
                     <h2>Our Other Services</h2>
                 </div>
-                <div class="services__cards">
+                <div class="services__cards _anim-items _anim-done">
                     <div class="services__cards-card">
                         <img src="images/services1.png" alt="Service 1 image">
                         <h2><a href="#">Private Charter</a></h2>
@@ -149,11 +150,11 @@
 
     <section class="section__destination">
         <div class="container">
-            <div class="destination">
-                <div class="destination__title">
+            <div class="destination" id="rent">
+                <div class="destination__title _anim-items _anim-done">
                     <h2>Popular Destination for Car Rentals</h2>
                 </div>
-                <div class="destination__cards">
+                <div class="destination__cards _anim-items _anim-done">
 
                     <div class="destination__cards-card">
                         <img src="images/london.png" alt="London Image">
@@ -283,19 +284,19 @@
     <section class="section__map">
         <div class="container">
             <div class="map">
-                <div class="map__title">
+                <div class="map__title _anim-items _anim-done">
                     <h2>Location</h2>
                 </div>
-                <div class="map__map">
+                <div class="map__map _anim-items _anim-done">
                     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12587.547908248258!2d12.49531184572541!3d41.88714125634391!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x132f61b6532013ad%3A0x28f1c82e908503c4!2z0JrQvtC70LjQt9C10Lk!5e0!3m2!1sru!2sua!4v1695551061651!5m2!1sru!2sua" width="1200" height="524" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="responsive_map"></iframe>
                 </div>
             </div>
         </div>
     </section>
 
-    <footer class="footer">
+    <footer class="footer" id="footer">
         <div class="container">
-            <div class="footer__main">
+            <div class="footer__main _anim-items _anim-done">
                 <div class="footer__main-info">
                     <div class="footer__main-info-logo">
                         <h2>HKinvision</h2>
@@ -330,6 +331,9 @@
             <h2>©2022 HKInvestor. All right reserved</h2>
         </div>
     </footer>
+
+    
     <script src="js/script.js"></script>
+    <script src="js/scroll.js"></script>
 </body>
 </html>

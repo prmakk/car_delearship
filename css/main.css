@@ -8,6 +8,7 @@
 
 body {
   background-color: #000;
+  overflow-x: hidden;
 }
 
 .container {
@@ -113,7 +114,7 @@ a {
     margin-left: 0px;
   }
   .nav__menu.active {
-    left: 0;
+    left: -26%;
   }
 }
 .section__hero {
@@ -124,12 +125,26 @@ a {
   top: 0;
   right: 0;
   z-index: -1;
+  opacity: 0;
+  transition: 0.7s all ease;
+  transform: translate(0, -50%);
+}
+.section__hero img._active {
+  transform: translate(0, 0);
+  opacity: 1;
 }
 
 .hero__title {
   max-width: 591px;
   color: #fff;
   margin-top: 167px;
+  opacity: 0;
+  transform: translate(-120%, 0);
+  transition: 0.7s all ease;
+}
+.hero__title._active {
+  transform: translate(0, 0);
+  opacity: 1;
 }
 .hero__title h1 {
   font-size: 52px;
@@ -144,6 +159,13 @@ a {
   max-width: 474px;
   opacity: 0.8;
   color: #fff;
+  opacity: 0;
+  transform: translate(-120%, 0);
+  transition: 0.7s all ease;
+}
+.hero__subtitle._active {
+  transform: translate(0, 0);
+  opacity: 1;
 }
 .hero__subtitle h2 {
   font-size: 17px;
@@ -155,6 +177,13 @@ a {
 .hero__buttons {
   display: flex;
   gap: 35px;
+  opacity: 0;
+  transform: translate(-120%, 0);
+  transition: 0.7s all ease;
+}
+.hero__buttons._active {
+  transform: translate(0, 0);
+  opacity: 1;
 }
 .hero__buy-btn {
   padding: 12px 24px;
@@ -190,6 +219,13 @@ a {
   margin-top: 40px;
   margin-bottom: 187px;
   gap: 40px;
+  opacity: 0;
+  transform: translate(-120%, 0);
+  transition: 0.7s all ease;
+}
+.hero__stats._active {
+  transform: translate(0, 0);
+  opacity: 1;
 }
 .hero__stat {
   color: #fff;
@@ -216,6 +252,13 @@ a {
   margin: 0 auto;
   max-width: 591px;
   margin-bottom: 40px;
+  opacity: 0;
+  transform: translate(0, 120%);
+  transition: 0.7s all ease;
+}
+.rent__title._active {
+  transform: translate(0, 0);
+  opacity: 1;
 }
 .rent__title h2 {
   text-align: center;
@@ -237,6 +280,13 @@ a {
 .rent__card {
   width: 584px;
   height: 524px;
+  opacity: 0;
+  transform: translate(0, 20%);
+  transition: 0.7s all ease;
+}
+.rent__card._active {
+  transform: translate(0, 0);
+  opacity: 1;
 }
 .rent__card h2 {
   margin-top: 48px;
@@ -285,6 +335,13 @@ a {
 .services__title {
   max-width: 591px;
   margin-bottom: 66px;
+  opacity: 0;
+  transform: translate(-120%, 0);
+  transition: 0.7s all ease;
+}
+.services__title._active {
+  transform: translate(0, 0);
+  opacity: 1;
 }
 .services__title h2 {
   color: #fff;
@@ -299,6 +356,13 @@ a {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-column-gap: 32px;
+  opacity: 0;
+  transform: translate(120%, 0);
+  transition: 0.7s all ease;
+}
+.services__cards._active {
+  transform: translate(0, 0);
+  opacity: 1;
 }
 .services__cards-card {
   max-width: 384px;
@@ -336,6 +400,13 @@ a {
   text-align: center;
   margin: 0 auto;
   margin-bottom: 40px;
+  opacity: 0;
+  transform: translate(120%, 0);
+  transition: 0.7s all ease;
+}
+.destination__title._active {
+  transform: translate(0, 0);
+  opacity: 1;
 }
 .destination__title h2 {
   color: #fff;
@@ -351,6 +422,13 @@ a {
   grid-template-rows: repeat(2, 1fr);
   grid-column-gap: 24px;
   grid-row-gap: 24px;
+  opacity: 0;
+  transform: translate(-120%, 0);
+  transition: 0.7s all ease;
+}
+.destination__cards._active {
+  transform: translate(0, 0);
+  opacity: 1;
 }
 .destination__cards-card {
   max-width: 384px;
@@ -405,6 +483,11 @@ a {
   margin-bottom: 40px;
   margin-top: 162px;
   text-align: center;
+  opacity: 0;
+  transition: 0.7s all ease;
+}
+.map__title._active {
+  opacity: 1;
 }
 .map__title h2 {
   color: #fff;
@@ -417,6 +500,13 @@ a {
 .map .responsive_map {
   max-width: 100%;
 }
+.map__map {
+  opacity: 0;
+  transition: 0.7s all ease;
+}
+.map__map._active {
+  opacity: 1;
+}
 
 .footer {
   background-color: #1F1905;
@@ -425,6 +515,13 @@ a {
 .footer__main {
   display: flex;
   justify-content: space-between;
+  opacity: 0;
+  transform: translate(0, 20%);
+  transition: 0.7s all ease;
+}
+.footer__main._active {
+  transform: translate(0, 0);
+  opacity: 1;
 }
 .footer__main-info {
   padding-top: 52px;
